@@ -181,13 +181,7 @@ body {
     display: none;
 }
 /* -------------------------------------------   MAIN    ----------------------------------------------------------------------*/
-body {
-    background-image: url("assets/portfoliobackgroundweb-02.png");
-    background-size: cover;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    min-height: 90vh;
-}
+
 
 #bigfolio {
  width: 50%;

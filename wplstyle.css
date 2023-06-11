@@ -181,7 +181,6 @@ body {
     display: none;
 }
 /* ----------------------------------------- main ---------------------------------------------------------*/
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #D7D5DC;
     color: #2C3142;
@@ -196,7 +195,6 @@ body {
     border-radius: 30px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
 .accordion:hover {
     background-color: #6275b9;
