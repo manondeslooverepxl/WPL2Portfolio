@@ -24,7 +24,7 @@ body {
 .logo img {
     width: 8rem;
     height: auto;
-    background-color: #aeadb5;
+    background-color: #D7D5DCq;
 }
 
 .container {
@@ -43,7 +43,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: #aeadb5;
+    background-color: #D7D5DC;
     border-radius: 30px;
     margin: 10px;
     margin-left: 7rem;
@@ -56,13 +56,13 @@ body {
 
 .navbar .nav-container li {
     list-style: none;
-    background-color: #aeadb5;
+    background-color: #D7D5DC;
 
 }
 
 .navbar .nav-container a {
     text-decoration: none;
-    color: #aeadb5;
+    color: #D7D5DC;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
@@ -101,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #aeadb5;
+    background-color: #D7D5DC;
 }
 
 .nav-container .hamburger-lines .line {
@@ -127,7 +127,7 @@ body {
 }
 
 .navbar .menu-items {
-    background-color: #aeadb5;
+    background-color: #D7D5DC;
     border-radius: 30px;
     color: #2C3142;
     height: 28rem;
@@ -146,7 +146,7 @@ body {
 
 .navbar .menu-items li {
     color: #2C3142;
-    background-color: #aeadb5;
+    background-color: #D7D5DC;
     margin-bottom: 1.2rem;
     font-size: 3rem;
     font-weight: 500;
@@ -157,7 +157,7 @@ body {
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
-    background-color: #aeadb5;
+    background-color: #D7D5DC;
 }
 
 
@@ -180,8 +180,7 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
 }
-/* -------------------------------------------   MAIN    ----------------------------------------------------------------------*/
-
+/* -------------------------------------------   MAIN    ---------------------------------------------------*/
 
 #bigfolio {
  width: 50%;
@@ -197,6 +196,14 @@ body {
 /* --------------------------------------- RESPONSIVITEIT -----------------------------------------------------------*/
 /* TELEFOON FORMAAT */
 @media screen and (min-width: 160px) and (max-width: 760px) {
+
+    body {
+        background-image: url("assets/portfoliobackground02-gsm-08.png");
+        background-size: cover;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
 
     .nav-container {
         display: flex;
@@ -227,6 +234,18 @@ body {
         transition: transform 0.5s ease-in-out;
         text-align: center;
     }
+
+
+    #bigfolio {
+        width: 75%;
+        margin: 2rem 3rem 1rem 3rem;
+    }
+
+    #dunk {
+        width: 60%;
+        margin: 1rem 5rem 1rem 5rem;
+
+    }
 }
 
 
@@ -236,6 +255,14 @@ body {
 @media screen and (min-width: 760px) and (max-width: 1024px)  {
 
 /* navigatie */
+
+    body {
+        background-image: url("assets/portfoliobackground02-ipad-07.png");
+        background-size: cover;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        min-height: 75vh;
+    }
 
     .nav-container {
         display: flex;
@@ -265,6 +292,16 @@ body {
         padding: 2rem;
         transition: transform 0.5s ease-in-out;
         text-align: center;
+    }
+
+    #bigfolio {
+        width: 75%;
+        margin: 2rem 3rem 1rem 5.5rem;
+    }
+
+    #dunk {
+        width: 60%;
+        margin: 1rem 5rem 1rem 8.5rem;
     }
 }
 
