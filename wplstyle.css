@@ -8,7 +8,7 @@
 
 /* ----------------------------------------   nav    ---------------------------------------*/
 body {
-    background-image: url("assets/portfoliobackgroundweb-01.png");
+    background-image: url("assets/portfoliobackgroundweb-02.png");
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
@@ -180,39 +180,63 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
 }
-
-
-/* ----------- MAIN CONTENT ----------- */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50rem;
-}
-
-.text {
-    font-size: 1.6rem;
-    max-width: 70%;
-    padding: 3rem;
+/* ----------------------------------------- main ---------------------------------------------------------*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #D7D5DC;
     color: #2C3142;
-    margin-left: 1rem;
-}
-
-.profielfoto {
-    max-width: 100%;
+    cursor: pointer;
+    padding: 12px;
+    width: 40%;
     text-align: center;
-    margin-left: 6rem;
-    margin-top: 3rem;
+    border: none;
+    outline: none;
+    transition: 0.6s;
+    margin: 3rem 6rem 0rem 23rem ;
+    border-radius: 30px;
 }
 
-#fotomanon {
-    width: 120%;
-    max-width: 300px;
-    height: auto;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.accordion:hover {
+    background-color: #6275b9;
 }
 
-/* -------------------------------------------------------------------------------------------------------------- */
+.panel {
+    width: 40%;
+    margin: 0.4rem 26rem 0rem 23rem ;
+    border-radius: 10px;
+    padding: 0 18px;
+    background-color: #D7D5DC;
+    display: none;
+    overflow: hidden;
+    border-radius: 30px;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+ul li a {
+    margin: 0.5rem 0;
+    color: #2C3142;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+/* --------------------------------------- RESPONSIVITEIT -----------------------------------------------------------*/
 
 /* TELEFOON FORMAAT */
 @media screen and (min-width: 160px) and (max-width: 760px) {
